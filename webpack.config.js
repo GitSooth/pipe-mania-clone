@@ -2,32 +2,32 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js', // Entry point for your project
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'), // Bundled output directory
-    clean: true, // Cleans the output directory before every build
+    path: path.resolve(__dirname, 'dist'), 
+    clean: true, 
   },
   module: {
     rules: [
       {
-        test: /\.css$/, // Handles CSS files
+        test: /\.css$/, 
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/, // Handles image files
+        test: /\.(png|jpe?g|gif)$/, 
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext]', // Preserve original file name
+          filename: 'images/[name][ext]', 
         },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Uses your existing HTML as a template
+      template: './src/index.html', 
     }),
   ],
-  mode: 'development', // Change to 'production' for optimized builds
-  devtool: 'inline-source-map', // Helpful for debugging
+  mode: 'development', 
+  devtool: 'inline-source-map', 
 };
