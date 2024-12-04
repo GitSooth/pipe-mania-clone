@@ -71,8 +71,6 @@ export default class Grid {
     this.findNeighbors();
 
     if (this.flowStarted) this.simulateWaterFlow();
-
-    //this.draw();
   }
 
   getMousePosition(mouseX, mouseY) {
@@ -195,7 +193,7 @@ export default class Grid {
         this.updatePipe(row, col);
 
         index++;
-        setTimeout(fillNextPipe, 5000); // 6 seconds per pipe
+        setTimeout(fillNextPipe, 5000); // 5 seconds per pipe
       } else {
         if (!this.connectedPipes[index - 1]) return;
         const [row, col] = this.connectedPipes[index - 1];
@@ -213,7 +211,7 @@ export default class Grid {
       }
     };
 
-    setTimeout(fillNextPipe, 5000); // Start after 3 seconds
+    setTimeout(fillNextPipe, 5000); // Start after 5 seconds
   }
 
   getNextPosition(x, y, direction) {
@@ -262,5 +260,3 @@ export default class Grid {
     }
   }
 }
-
-// export default Grid();
