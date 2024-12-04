@@ -2,7 +2,7 @@
 
 ## 🎮 Game Description
 
-This game takes inspiration from the classic *Pipe Mania*. The objective is simple yet challenging: connect randomly generated pipe segments to create a continuous pipeline before time runs out. Once the timer ends, the liquid flows through your pipeline, and you score points based on its length and functionality.
+This game takes inspiration from the classic *Pipe Mania*. The objective is simple yet challenging: connect randomly generated pipe segments to create a continuous pipeline connecting the valve to the finish, before the flow spills out of open pipes.
 
 ## 🛠️ Technologies Used
 
