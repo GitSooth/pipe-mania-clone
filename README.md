@@ -28,7 +28,7 @@ Ensure you have **Node.js** installed on your system. You can download it from [
    
 2. Navigate to project folder
    ```bash
-    cd <project-folder>
+    cd pipe-mania-clone
    ```
    
 3. Install dependencies
